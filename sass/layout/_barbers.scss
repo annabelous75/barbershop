@@ -1,0 +1,95 @@
+.barbers {
+  background-color: #f7f7f7;
+}
+.barbers-pre-title {
+  color: #303030;
+  margin: 20px;
+}
+
+.barbers-title {
+  color: var(--second-title-color);
+  margin-bottom: 44px;
+}
+
+.barbers-list {
+  display: block;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.barbers-item {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 3);
+  }
+}
+.barbers-item img {
+  margin-right: auto;
+  margin-left: auto;
+  width: 370px;
+  @media screen and (min-width: 768px) {
+    width: 418px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 370px;
+  }
+}
+.barbers-item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+  margin-bottom: 8px;
+}
+.barbers-item-text {
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ff6c00;
+  margin-bottom: 30px;
+}
+
+.barbers-wrap {
+  padding-top: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 64px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.barbers-soc {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.barbers-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: rgba(48, 48, 48, 1);
+}
+
+.barbers-soc-link:hover,
+.barbers-soc-link:focus {
+  background-color: white;
+}
+
+.barbers-soc-link:hover .barbers-soc-icon,
+.barbers-soc-link:focus .barbers-soc-icon {
+  fill: #ff6c00;
+}
