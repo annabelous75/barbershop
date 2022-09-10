@@ -24,7 +24,7 @@
     <header class="header">
       <div class="container">
         <a href="" class="header-logo">
-          <img src="./img/logo.svg" alt="site logo" />
+          <img src="./img/Logo.svg" alt="site logo" />
         </a>
         <nav class="header-nav">
           <ul class="header-list list">
@@ -54,6 +54,68 @@
             Online-booking
           </button>
         </div>
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg class="menu"><use href="./img/symbol-defs.svg#icon-menu"></use></svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close-btn" data-menu-close>
+              <svg class="close__icon"><use href="./img/symbol-defs.svg#icon-close"></use></svg>
+            </button>
+            <nav class="mob-menu-navigation">
+              <ul class="mob-menu-list list">
+                <li class="mob-menu-item">
+                  <a href="https://www.google.com/" class="mob-menu-link link"
+                    >About</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a href="https://www.google.com/" class="mob-menu-link link"
+                    >Services and prices</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a href="#barbers" class="mob-menu-link link">Barbers</a>
+                </li>
+                <li class="mob-menu-item">
+                  <a href="" class="mob-menu-link link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="mob-connect">
+            <a href="tel:+380441111111" class="mob-connect-tel link"
+              >+38 044 111 11 11</a
+            >
+            <button type="button" class="mob-connect-btn btn" data-modal-open>
+              Online-booking
+            </button>
+          </div>
+          <ul class="mob-soc-list list">
+            <li class="mob-soc-item">
+              <a
+                href=""
+                class="mob-soc-link link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Instagram</a
+              >
+            </li>
+            <li class="mob-soc-item">
+              <a
+                href=""
+                class="mob-soc-link link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
       </div>
     </header>
     <main>
@@ -350,7 +412,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
        <section class="gallery section">
         <div class="container">
           <p class="gallery-pre-title pre-title">
@@ -463,7 +525,8 @@
           </section>
           <section class="contacts section">
             <h2 class="title contacts-title">Contacts</h2>
-            <address class="contacts-address">
+            <div class="contact-tablet">
+                <address class="contacts-address">
               <a
                 href="https://goo.gl/maps/HPy8ZSEA6FNUYbvNA"
                 target="_blank"
@@ -484,8 +547,11 @@
                 </li>
               </ul>
             </address>
-            <p class="pre-title contacts-time-title">Working hours</p>
+            <div class="content-contact">
+                <p class="pre-title contacts-time-title">Working hours</p>
             <p class="contacts-time-text">Every day from 9:00 to 22:00</p>
+            </div>
+            </div>
           </section>
         </div>
       </div> 
@@ -558,5 +624,6 @@
       </div>
     </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

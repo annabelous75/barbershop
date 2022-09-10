@@ -1,8 +1,10 @@
 .online {
-  background-color: #191c26;
-  padding-bottom: 183px;
-  width: calc(50% - 15px);
-  margin-right: 30px;
+  width: 100%;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 183px;
+    width: calc(50% - 15px);
+    margin-right: 30px;
+  }
 }
 
 .online-title {
