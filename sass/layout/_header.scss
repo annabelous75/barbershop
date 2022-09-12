@@ -8,7 +8,17 @@
     align-items: center;
   }
 }
-
+.header-icon {
+  width: 70px;
+  height: 70px;
+  fill: #ffffff;
+  @media screen and (min-width: 768px) {
+    fill: black;
+  }
+  @media screen and (min-width: 1200px) {
+    fill: black;
+  }
+}
 .header-logo {
   fill: white;
   @media screen and (min-width: 768px) {
@@ -56,7 +66,7 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 12px;
     text-align: center;
-    margin-left: 42px;
+    margin-left: 50px;
   }
   text-align: center;
   margin-bottom: 12px;
